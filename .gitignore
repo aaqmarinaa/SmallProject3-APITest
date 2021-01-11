@@ -1,3 +1,4 @@
+
 .gradle
 
 bin
@@ -14,3 +15,5 @@ build
 .classpath
 
 .project
+
+default.glbl

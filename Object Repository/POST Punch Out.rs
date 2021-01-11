@@ -10,17 +10,34 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;application/x-www-form-urlencoded&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;value&quot;: &quot;18&quot;
+    },
+    {
+      &quot;name&quot;: &quot;timezone&quot;,
+      &quot;value&quot;: &quot;Europe/London&quot;
+    },
+    {
+      &quot;name&quot;: &quot;note&quot;,
+      &quot;value&quot;: &quot;this is for punch out 1&quot;
+    },
+    {
+      &quot;name&quot;: &quot;datetime&quot;,
+      &quot;value&quot;: &quot;2021-01-11 03:23&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>x-www-form-urlencoded</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
+      <value>application/x-www-form-urlencoded</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -33,7 +50,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/:id/punch-out</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/18/punch-out</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

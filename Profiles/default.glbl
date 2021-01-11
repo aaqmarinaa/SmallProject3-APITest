@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Bearer 98726713452781aa26e848117001e759adaed226'</initValue>
+      <initValue>'Bearer 75a08af230a35a511e147968acbd51143a029795'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

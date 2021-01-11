@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Punch In</name>
+   <name>DELETE Employee Work Exp</name>
    <tag></tag>
-   <elementGuidId>4a614873-ed52-44b6-a472-55856451612c</elementGuidId>
+   <elementGuidId>af1ddabb-f981-4ffa-9c1d-0beb66d3f939</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,19 +15,11 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;id&quot;,
-      &quot;value&quot;: &quot;18&quot;
+      &quot;value&quot;: &quot;248&quot;
     },
     {
-      &quot;name&quot;: &quot;timezone&quot;,
-      &quot;value&quot;: &quot;Europe/London&quot;
-    },
-    {
-      &quot;name&quot;: &quot;note&quot;,
-      &quot;value&quot;: &quot;this note is for punch in test 1&quot;
-    },
-    {
-      &quot;name&quot;: &quot;datetime&quot;,
-      &quot;value&quot;: &quot;2021-01-11 01:20&quot;
+      &quot;name&quot;: &quot;seqId&quot;,
+      &quot;value&quot;: &quot;2&quot;
     }
   ]
 }</httpBodyContent>
@@ -49,8 +41,8 @@
    <katalonVersion>7.7.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/18/punch-in</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/248/work-experience</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -22,10 +22,6 @@
       &quot;value&quot;: &quot;last name test&quot;
     },
     {
-      &quot;name&quot;: &quot;maritalStatus&quot;,
-      &quot;value&quot;: &quot;married&quot;
-    },
-    {
       &quot;name&quot;: &quot;middleName&quot;,
       &quot;value&quot;: &quot;middle name test&quot;
     },
@@ -35,7 +31,11 @@
     },
     {
       &quot;name&quot;: &quot;dob&quot;,
-      &quot;value&quot;: &quot;22-01-1998&quot;
+      &quot;value&quot;: &quot;1998-01-23&quot;
+    },
+    {
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;value&quot;: &quot;248&quot;
     }
   ]
 }</httpBodyContent>
@@ -58,7 +58,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/217</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/248</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

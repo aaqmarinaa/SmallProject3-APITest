@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Punch In</name>
+   <name>PUT Employee Work Exp</name>
    <tag></tag>
-   <elementGuidId>4a614873-ed52-44b6-a472-55856451612c</elementGuidId>
+   <elementGuidId>f90e5a86-e846-480d-a0f0-9934bb427053</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,19 +15,31 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;id&quot;,
-      &quot;value&quot;: &quot;18&quot;
+      &quot;value&quot;: &quot;248&quot;
     },
     {
-      &quot;name&quot;: &quot;timezone&quot;,
-      &quot;value&quot;: &quot;Europe/London&quot;
+      &quot;name&quot;: &quot;seqId&quot;,
+      &quot;value&quot;: &quot;2&quot;
     },
     {
-      &quot;name&quot;: &quot;note&quot;,
-      &quot;value&quot;: &quot;this note is for punch in test 1&quot;
+      &quot;name&quot;: &quot;company&quot;,
+      &quot;value&quot;: &quot;cilsy fiolution&quot;
     },
     {
-      &quot;name&quot;: &quot;datetime&quot;,
-      &quot;value&quot;: &quot;2021-01-11 01:20&quot;
+      &quot;name&quot;: &quot;title&quot;,
+      &quot;value&quot;: &quot;qa lead&quot;
+    },
+    {
+      &quot;name&quot;: &quot;fromDate&quot;,
+      &quot;value&quot;: &quot;2018-02-15&quot;
+    },
+    {
+      &quot;name&quot;: &quot;toDate&quot;,
+      &quot;value&quot;: &quot;2019-04-18&quot;
+    },
+    {
+      &quot;name&quot;: &quot;comment&quot;,
+      &quot;value&quot;: &quot;become a qa lead in cilsy&quot;
     }
   ]
 }</httpBodyContent>
@@ -49,8 +61,8 @@
    <katalonVersion>7.7.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/18/punch-in</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/248/work-experience</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

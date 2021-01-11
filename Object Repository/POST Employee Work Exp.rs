@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Punch In</name>
+   <name>POST Employee Work Exp</name>
    <tag></tag>
-   <elementGuidId>4a614873-ed52-44b6-a472-55856451612c</elementGuidId>
+   <elementGuidId>56a3e917-07d6-41b9-afe1-b14827f29b05</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,19 +15,27 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;id&quot;,
-      &quot;value&quot;: &quot;18&quot;
+      &quot;value&quot;: &quot;248&quot;
     },
     {
-      &quot;name&quot;: &quot;timezone&quot;,
-      &quot;value&quot;: &quot;Europe/London&quot;
+      &quot;name&quot;: &quot;company&quot;,
+      &quot;value&quot;: &quot;cilsy&quot;
     },
     {
-      &quot;name&quot;: &quot;note&quot;,
-      &quot;value&quot;: &quot;this note is for punch in test 1&quot;
+      &quot;name&quot;: &quot;title&quot;,
+      &quot;value&quot;: &quot;qa tester&quot;
     },
     {
-      &quot;name&quot;: &quot;datetime&quot;,
-      &quot;value&quot;: &quot;2021-01-11 01:20&quot;
+      &quot;name&quot;: &quot;fromDate&quot;,
+      &quot;value&quot;: &quot;2016-03-12&quot;
+    },
+    {
+      &quot;name&quot;: &quot;toDate&quot;,
+      &quot;value&quot;: &quot;2019-05-18&quot;
+    },
+    {
+      &quot;name&quot;: &quot;comment&quot;,
+      &quot;value&quot;: &quot;work in cilsy as a qa&quot;
     }
   ]
 }</httpBodyContent>
@@ -50,7 +58,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/18/punch-in</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/248/work-experience</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

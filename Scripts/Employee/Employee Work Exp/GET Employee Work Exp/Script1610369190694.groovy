@@ -15,9 +15,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('Admin/POST User Login'))
+response = WS.sendRequest(findTestObject('Employee/Employee Work Exp/GET Employee Work Exp'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'login', 'true')
+WS.verifyElementPropertyValue(response, 'data[1].id', '2')
 
+WS.verifyElementPropertyValue(response, 'data[1].company', 'rf')
+
+WS.verifyElementPropertyValue(response, 'data[1].jobTitle', 'qa manual')
+
+WS.verifyElementPropertyValue(response, 'data[1].fromDate', '2020-10-12')
+
+WS.verifyElementPropertyValue(response, 'data[1].toDate', '2021-01-14')

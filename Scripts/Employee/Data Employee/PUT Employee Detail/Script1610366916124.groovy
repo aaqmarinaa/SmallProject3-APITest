@@ -15,9 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('Admin/POST User Login'))
+response = WS.sendRequest(findTestObject('Employee/Data Employee/PUT Employee Detail'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'login', 'true')
-
+WS.verifyElementPropertyValue(response, 'success', 'Successfully Updated')

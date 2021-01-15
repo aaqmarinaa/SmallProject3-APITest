@@ -15,9 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('Admin/POST User Login'))
+response = WS.sendRequest(findTestObject('Employee/Employee Work Exp/GET Employee Work Exp'))
 
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyResponseStatusCode(response, 404)
 
-WS.verifyElementPropertyValue(response, 'login', 'true')
+WS.verifyElementPropertyValue(response, 'error.status', '404')
 
+WS.verifyElementPropertyValue(response, 'error.text', 'No Records Found')

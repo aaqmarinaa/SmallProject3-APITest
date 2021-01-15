@@ -15,9 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('Admin/POST User Login'))
+response = WS.sendRequest(findTestObject('Employee/Supervisore Details/GET Supervisor Details'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'login', 'true')
+WS.verifyElementPropertyValue(response, 'data[0].name', 'Sherina Melodi Darmawan')
+
+WS.verifyElementPropertyValue(response, 'data[0].id', '4')
+
+WS.verifyElementPropertyValue(response, 'data[0].code', '0009')
+
+WS.verifyElementPropertyValue(response, 'data[0].reportingMethod', 'Direct')
 

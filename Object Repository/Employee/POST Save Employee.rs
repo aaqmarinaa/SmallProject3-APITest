@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;firstName\&quot;: \&quot;ara\&quot;,\n  \&quot;middleName\&quot;: \&quot;test11\&quot;,\n  \&quot;lastname\&quot;: \&quot;aqmarina\&quot;,\n  \&quot;code\&quot;: \&quot;201\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;firstName\&quot;: \&quot;Almas\&quot;,\n  \&quot;middleName\&quot;: \&quot;test11\&quot;,\n  \&quot;lastName\&quot;: \&quot;Aqmarina\&quot;,\n  \&quot;code\&quot;: \&quot;1805b\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -33,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/:id</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/18</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Employee Work Experience</name>
+   <name>Attendance</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,29 +10,29 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>25acb95c-0e50-4e7d-ad50-7a4c57ef425e</testSuiteGuid>
+   <testSuiteGuid>dc7df35e-6a23-46a9-b89d-441e65d8138e</testSuiteGuid>
    <testCaseLink>
-      <guid>ca64ef22-d856-4bd8-ba70-3434362331fb</guid>
+      <guid>a0e02fd1-5d90-4b0c-83ba-2761998a3b6f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Employee/Employee Work Exp/POST Employee Work Exp</testCaseId>
+      <testCaseId>Test Cases/Attendance/POST Punch In</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>39cf3c03-5668-40f4-ab83-880bf20afca7</guid>
+      <guid>595cb974-a26a-4699-9574-2dc28a2def22</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Employee/Employee Work Exp/PUT Employee Work Exp</testCaseId>
+      <testCaseId>Test Cases/Attendance/TC Already Punch In</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b917a29c-59ee-4e53-bd54-a3477f9066aa</guid>
+      <guid>c2e4661c-55e2-4712-a87b-9b0e5651f7ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Employee/Employee Work Exp/DELETE Employee Work Exp</testCaseId>
+      <testCaseId>Test Cases/Attendance/POST Punch Out</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0a4da006-d4b8-42a5-833c-1a4b1664b5b2</guid>
+      <guid>53d1cda1-e77f-4cd4-84fd-78ce355cd622</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Employee/Employee Work Exp/GET Employee Work Exp</testCaseId>
+      <testCaseId>Test Cases/Attendance/TC Already Punch Out</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

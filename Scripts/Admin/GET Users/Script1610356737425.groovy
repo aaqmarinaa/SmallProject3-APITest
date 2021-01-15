@@ -15,7 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('POST Punch In'))
+response = WS.sendRequest(findTestObject('Admin/GET Users'))
 
 WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementsCount(response, 'data', 21)
+
+WS.verifyElementPropertyValue(response, 'data[0].userName', 'Admin')
 

@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('GET Employee Search'))
+response = WS.sendRequest(findTestObject('Employee/PUT Employee Work Exp'))
 
 WS.verifyResponseStatusCode(response, 200)
+

@@ -15,7 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('PUT Employee Work Exp'))
+response = WS.sendRequest(findTestObject('Attendance/POST Punch Out'))
 
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyResponseStatusCode(response, 202)
+
+WS.verifyElementPropertyValue(response, 'error.text', 'Cannot Proceed Punch Out Employee Already Punched Out')
 

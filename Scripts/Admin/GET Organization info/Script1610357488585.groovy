@@ -15,7 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('DELETE Employee Work Exp'))
+response = WS.sendRequest(findTestObject('Admin/GET Organization Information'))
 
 WS.verifyResponseStatusCode(response, 200)
 
+WS.verifyElementPropertyValue(response, 'data.id', '1')
+
+WS.verifyElementPropertyValue(response, 'data.name', 'Ajo Hotel')
+
+WS.verifyElementPropertyValue(response, 'data.taxId', '12-3456789as')

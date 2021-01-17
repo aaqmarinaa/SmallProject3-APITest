@@ -21,4 +21,5 @@ WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'success', 'Successfully Saved')
 
-WS.verifyElementPropertyValue(response, 'seqId', '3')
+WS.verifyElementPropertyValue(response, 'seqId', '2')
+

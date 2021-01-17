@@ -21,8 +21,11 @@ WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'data.firstName', 'Almas')
 
+WS.verifyElementPropertyValue(response, 'data.middleName', 'POST 1')
+
 WS.verifyElementPropertyValue(response, 'data.lastName', 'Aqmarina')
 
-WS.verifyElementPropertyValue(response, 'data.code', '1805a')
+WS.verifyElementPropertyValue(response, 'data.code', '1511ccc')
 
 WS.verifyElementPropertyValue(response, 'data.employeeId', '268')
+

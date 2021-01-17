@@ -23,4 +23,5 @@ WS.verifyElementPropertyValue(response, 'data[14].firstName', 'Almas')
 
 WS.verifyElementPropertyValue(response, 'data[14].lastName', 'Aqmarina')
 
-WS.verifyElementPropertyValue(response, 'data[14].code', '1805a')
+WS.verifyElementPropertyValue(response, 'data[14].code', '1805b')
+

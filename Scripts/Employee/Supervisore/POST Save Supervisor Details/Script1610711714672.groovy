@@ -19,5 +19,5 @@ response = WS.sendRequest(findTestObject('Employee/Supervisore Details/POST Save
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'success', '"Successfully Saved"')
+WS.verifyElementPropertyValue(response, 'success', 'Successfully Saved')
 

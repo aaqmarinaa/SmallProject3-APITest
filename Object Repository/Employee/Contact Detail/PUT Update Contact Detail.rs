@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Request Token</name>
+   <name>PUT Update Contact Detail</name>
    <tag></tag>
-   <elementGuidId>ce5f56b3-d540-445e-b552-e7731d79d9ef</elementGuidId>
+   <elementGuidId>8946f2fd-fd1f-4ab2-a9f4-49095a340ae8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;client_id\&quot;: \&quot;aqmarina\&quot;,\n    \&quot;client_secret\&quot;: \&quot;aqmarina\&quot;,\n    \&quot;grant_type\&quot;: \&quot;client_credentials\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;id\&quot;:\&quot;268\&quot;,\n    \&quot;addressStreet1\&quot;:\&quot;Jl. Palagan Tentara Pelajaran\&quot;,\n    \&quot;city\&quot;:\&quot;Yogyakarta\&quot;,\n    \&quot;state\&quot;:\&quot;D.I. Yogyakarta\&quot;,\n    \&quot;zip\&quot;:\&quot;18787\&quot;,\n    \&quot;country\&quot;:\&quot;Indonesia\&quot;,\n    \&quot;homeTelephone\&quot;:\&quot;021-12345678\&quot;,\n    \&quot;mobile\&quot;:\&quot;087853269999\&quot;,\n  \t\&quot;workTelephone\&quot;:\&quot;021-374792384\&quot;,\n    \&quot;workEmail\&quot;:\&quot;almas1@cilsy.id\&quot;,\n    \&quot;otherEmail\&quot;:\&quot;almas2@gmail.com\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,11 +22,18 @@
       <type>Main</type>
       <value>application/json</value>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>${GlobalVariable.token}</value>
+   </httpHeaderProperties>
    <katalonVersion>7.7.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/index.php/oauth/issueToken</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/268/contact-detail</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

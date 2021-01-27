@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Request Token</name>
+   <name>POST Save Contact Detail</name>
    <tag></tag>
-   <elementGuidId>ce5f56b3-d540-445e-b552-e7731d79d9ef</elementGuidId>
+   <elementGuidId>345c70bc-4f21-46d9-8433-d42b8880fdf0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;client_id\&quot;: \&quot;aqmarina\&quot;,\n    \&quot;client_secret\&quot;: \&quot;aqmarina\&quot;,\n    \&quot;grant_type\&quot;: \&quot;client_credentials\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;id\&quot;:\&quot;268\&quot;,\n    \&quot;addressStreet1\&quot;:\&quot;Jl. Alamat ini adalah alamat\&quot;,\n    \&quot;city\&quot;:\&quot;jogja\&quot;,\n    \&quot;state\&quot;:\&quot;diy\&quot;,\n    \&quot;zip\&quot;:\&quot;12345\&quot;,\n    \&quot;country\&quot;:\&quot;Indonesia\&quot;,\n    \&quot;homeTelephone\&quot;:\&quot;021-12345678\&quot;,\n    \&quot;mobile\&quot;:\&quot;087686871281\&quot;,\n    \&quot;workTelephone\&quot;:\&quot;021-374792384\&quot;,\n    \&quot;workEmail\&quot;:\&quot;almas@cilsy.id\&quot;,\n    \&quot;otherEmail\&quot;:\&quot;almas1@gmail.com\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,11 +22,18 @@
       <type>Main</type>
       <value>application/json</value>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>${GlobalVariable.token}</value>
+   </httpHeaderProperties>
    <katalonVersion>7.7.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/index.php/oauth/issueToken</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/268/contact-detail</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

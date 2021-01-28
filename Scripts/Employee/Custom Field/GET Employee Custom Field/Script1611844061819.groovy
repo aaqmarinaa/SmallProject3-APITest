@@ -15,11 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('Admin/GET Users'))
+response = WS.sendRequest(findTestObject('Employee/Custom Field/GET Employee Custom Field'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementsCount(response, 'data', 32)
+WS.verifyElementPropertyValue(response, 'data[0].id', 1)
 
-WS.verifyElementPropertyValue(response, 'data[0].userName', 'Admin')
+WS.verifyElementPropertyValue(response, 'data[0].name', 'inosuke')
+
+WS.verifyElementPropertyValue(response, 'data[0].type', 'Text or Number')
+
+WS.verifyElementPropertyValue(response, 'data[0].screen', 'personal')
 

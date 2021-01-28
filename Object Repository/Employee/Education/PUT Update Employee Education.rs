@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Save Dependants</name>
+   <name>PUT Update Employee Education</name>
    <tag></tag>
-   <elementGuidId>45e719a9-099e-4eee-81c1-a4d170bf31dd</elementGuidId>
+   <elementGuidId>ca4f2a39-4fd9-44cd-8762-e9888e5fb818</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;:\&quot;272\&quot;,\n  \&quot;name\&quot;:\&quot;coba 2\&quot;,\n  \&quot;relationship\&quot;:\&quot;Daughter\&quot;,\n  \&quot;dob\&quot;:\&quot;2002-05-18\&quot;\n}\n&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;:\&quot;272\&quot;,\n  \&quot;level\&quot;:\&quot;2\&quot;,\n  \&quot;seqId\&quot;:\&quot;98\&quot;,\n  \&quot;institute\&quot;:\&quot;Cilsyyyyyyy\&quot;,\n  \&quot;startDate\&quot;:\&quot;2020-10-18\&quot;,\n  \&quot;endDate\&quot;:\&quot;2021-02-03\&quot;,\n  \&quot;specialization\&quot;:\&quot;QAQAQAQA\&quot;,\n  \&quot;year\&quot;:\&quot;2020\&quot;,\n  \&quot;gpa\&quot;:\&quot;3.50\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -32,8 +32,8 @@
    <katalonVersion>7.7.1</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/272/dependent</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/272/education</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

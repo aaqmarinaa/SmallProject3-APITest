@@ -19,7 +19,7 @@
     },
     {
       &quot;name&quot;: &quot;sequenceNumber&quot;,
-      &quot;value&quot;: &quot;1&quot;
+      &quot;value&quot;: &quot;2&quot;
     }
   ]
 }</httpBodyContent>

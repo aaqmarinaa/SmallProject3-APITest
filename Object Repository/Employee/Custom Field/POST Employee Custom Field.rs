@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>POST Save Dependants</name>
+   <name>POST Employee Custom Field</name>
    <tag></tag>
-   <elementGuidId>45e719a9-099e-4eee-81c1-a4d170bf31dd</elementGuidId>
+   <elementGuidId>d58bd1f5-9a56-4df9-8ef4-4fe5e4da6a5a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;:\&quot;272\&quot;,\n  \&quot;name\&quot;:\&quot;coba 2\&quot;,\n  \&quot;relationship\&quot;:\&quot;Daughter\&quot;,\n  \&quot;dob\&quot;:\&quot;2002-05-18\&quot;\n}\n&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;id\&quot;:\&quot;272\&quot;,\n    \&quot;fieldId\&quot;:\&quot;1\&quot;,\n    \&quot;value\&quot;:\&quot;this is value\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -33,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/272/dependent</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/api/v1/employee/272/custom-field</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

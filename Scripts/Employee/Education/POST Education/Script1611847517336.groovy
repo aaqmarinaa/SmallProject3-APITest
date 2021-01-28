@@ -15,11 +15,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('Admin/GET Users'))
+response = WS.sendRequest(findTestObject('Employee/Education/POST Employee Education'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementsCount(response, 'data', 32)
+WS.verifyElementPropertyValue(response, 'success', 'Successfully Saved')
 
-WS.verifyElementPropertyValue(response, 'data[0].userName', 'Admin')
+response = WS.sendRequest(findTestObject('Employee/Education/Employee Education'))
 
+WS.verifyElementsCount(response, 'data', 2)
+
+WS.verifyElementPropertyValue(response, 'data[0].level', 'Beginner')
+
+WS.verifyElementPropertyValue(response, 'data[0].institute', 'Cilsy')
+
+WS.verifyElementPropertyValue(response, 'data[0].specialization', 'QA Automation')
